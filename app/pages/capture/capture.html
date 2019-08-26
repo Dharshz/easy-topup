@@ -1,0 +1,5 @@
+<StackLayout class="p-20">
+    <Button text="< BACK" (tap)="goBack()"  class="btn btn-primary btn-active"></Button>
+    <Button text="Capture" (tap)="takeScreenshot()" class="btn btn-primary btn-active"></Button>
+    <Image ng-if="imgSource" [src]="imgSource"></Image>
+</StackLayout>

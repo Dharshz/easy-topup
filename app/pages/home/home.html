@@ -1,0 +1,5 @@
+<StackLayout class="p-20">
+    <Button text="Capture" (tap)="takeScreenshot()" class="btn btn-primary btn-active"></Button>
+    <Button ng-show ="!isParseBtnClicked" text="Read" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
+    <TextView hint="Copy PIN from here" class="input input-border" [(ngModel)]="message"></TextView>
+</StackLayout>
